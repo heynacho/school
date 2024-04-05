@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat|PT+Serif);
+
+.container {
+    position:relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ===== header ===== */
+header {
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+/* menu-bar */
+.menu-bar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar > .logo {
+    font-size: 28px;
+    font-weight: normal;
+    color: navy;
+}
+.menu-bar > .menu-toggle-btn {
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-toggle-btn > span {
+    width: 20px;
+    height: 2px;
+    background-color: navy;
+}
+
+/* main-menu */
+.main-menu {
+    display: none;
+}
+.gnb {
+    display: flex;
+    flex-direction: column;
+}
+.gnb > li {
+    padding: 10px 30px;
+    border-bottom: 1px solid darkblue;
+    background-color: rgb(46, 46, 151);
+}
+.gnb > li > a {
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-bar > .menu-toggle-btn {
+        display: none;
+    }
+    .main-menu {
+        display: block;
+    }
+    .gnb {
+        display: flex;
+        flex-direction: row;
+    }
+    .gnb > li {
+        padding-left: 5px;
+        border: none;
+        background-color: white;
+    }
+    .gnb > li > a {
+        color: darkblue;
+    }
+}
+
+/* ===== main ===== */
+section .title {
+    color: darkblue;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    text-align: center;
+}
+section h2 {
+    /* margin-bottom: 30px; */
+    font-size: 40px;
+}
+
+/* slide */
+article.slide > h2 {
+    font-size: 0;
+}
+article.slide > img {
+    width: 100%;
+}
+
+/* desc */
+.desc {
+    padding: 50px;
+}
+.desc p {
+    font-family: '바탕체';
+    text-align: center;
+}
+.desc > .container > .text {
+    margin: 30px 0;
+}
+
+.promo {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.promo > li {
+    height: 20%;
+}
+.promo > li > img {
+    margin: 30px auto;
+}
+.promo > li > .title {
+    margin: 30px auto;
+}
+.promo > li > .txt {
+    margin-bottom: 30px;
+}
+
+/* work */
+
+
+
