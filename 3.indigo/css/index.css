@@ -7,6 +7,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* ===== header ===== */
@@ -106,6 +107,7 @@ article.slide > img {
 /* desc */
 .desc {
     padding: 50px;
+    /* border-bottom: 1px solid #eee; */
 }
 .desc p {
     font-family: '바탕체';
@@ -135,7 +137,63 @@ article.slide > img {
     margin-bottom: 30px;
 }
 
+hr {
+    margin: 20px;
+}
+
 /* work */
+.work {
+    padding: 50px 0;
+}
+.work .title {
+    padding-bottom: 30px;
+}
+.work > .conbox > div {
+    position: relative;
+}
+.work > .conbox > div > img {
+    width: 100%;
+}
+.work > .conbox > div > .txt {
+    display: none;
+}
+.work > .conbox > div:nth-child(5),
+.work > .conbox > div:nth-child(6),
+.work > .conbox > div:nth-child(7),
+.work > .conbox > div:nth-child(8) {
+    display: none;
+}
+.work > hr {
+    margin: 150px 48% 50px;
+    background-color: navy;
+}
 
+/* contact */
+.contact > h2 {
+    margin-bottom: 50px;
+}
+.name,
+.phone,
+.mail,
+.message {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+}
+.submit {
+    float: right;
+    padding: 15px;
+    border: 0;
+    color: white;
+    background-color: navy;
+}
 
-
+/* ===== footer ===== */
+footer p {
+    padding: 30px;
+    color: darkblue;
+    font-family: 'Montserrat';
+    text-align: center;
+}
