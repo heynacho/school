@@ -18,7 +18,7 @@ header {
 
 /* menu-bar */
 .menu-bar {
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -59,7 +59,8 @@ header {
 }
 
 @media screen and (min-width:768px) {
-    header {
+    header > .container {
+        padding: 0 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -79,6 +80,10 @@ header {
         border: none;
         background-color: white;
     }
+    .gnb > li:last-child {
+        padding-right: 0;
+    }
+
     .gnb > li > a {
         color: darkblue;
     }
@@ -113,7 +118,7 @@ article.slide > img {
     font-family: '바탕체';
     text-align: center;
 }
-.desc > .container > .text {
+.desc > .container > .desc-info > .text {
     margin: 30px 0;
 }
 
@@ -172,6 +177,9 @@ hr {
 .contact > h2 {
     margin-bottom: 50px;
 }
+.contact form {
+    margin-bottom: 100px;
+}
 .name,
 .phone,
 .mail,
@@ -190,6 +198,132 @@ hr {
     background-color: navy;
 }
 
+@media screen and (min-width:768px) {
+    /* desc */
+    .promo {
+        margin: 100px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .promo > li {
+        width: 20%;
+    }
+    .promo > li > img {
+        height: 70px;
+        margin: 30px auto;
+    }
+    .promo > li > .title {
+        margin: 30px auto;
+    }
+    .promo > li > .txt {
+        margin-bottom: 30px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* work */
+    .work > .conbox {
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .work > .conbox > div {
+        position: relative;
+        width: 50%;
+    }
+    .work > .conbox > div > img {
+        width: 100%;
+    }
+    .work > .conbox > div:nth-child(5),
+    .work > .conbox > div:nth-child(6),
+    .work > .conbox > div:nth-child(7),
+    .work > .conbox > div:nth-child(8) {
+        display: block;
+    }
+    .work > .conbox > div > .txt {
+        display: block;
+        position: absolute;
+        top:5%; left:5%;
+        font-family: 'Montserrat';
+    }
+    .work > hr {
+        display: block;
+        width: 20px;
+        margin: 150px auto 50px;
+        background-color: navy;
+    }
+
+    /* contact */
+    .contact form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    form > .info {
+        width: 50%;
+        padding: 10px;
+    }
+    form > .message-box {
+        width: 50%;
+        padding: 10px;
+    }
+    .submit {
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .desc > .container > .desc-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .desc > .container > .desc-info > .text {
+        margin: 0;
+        padding-left: 30px;
+        border-left: 1px solid #ccc;
+        text-align: left;
+        line-height: 2.0;
+    }
+    .promo {
+        margin-bottom: 50px;
+    }
+    .promo > li {
+        width: 24%;
+    }
+    
+    hr {
+        display: block;
+        width: 90%;
+        margin: 0 auto 50px;
+        background-color: #ccc;
+    }
+
+    /* work */
+    .work h2 {
+        margin-left: 50px;
+        text-align: left;
+    }
+    .work > .conbox > div {
+        width: 25%;
+    }
+
+    /* contact */
+    .contact {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact > h2 {
+        margin-right: 50px;
+    }
+
+}
 /* ===== footer ===== */
 footer p {
     padding: 30px;

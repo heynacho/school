@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <div class="container">
         <div class="menu-bar">
             <h1 class="logo">INDIGO</h1>
             <div class="menu-toggle-btn">
@@ -18,7 +19,6 @@
             </div>
         </div><!-- menu-bar -->
         <nav class="main-menu">
-            <div class="container">
                 <ul class="gnb">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">WE ARE</a></li>
@@ -26,8 +26,8 @@
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
-            </div><!-- container -->
-        </nav>
+            </nav>
+        </div><!-- container -->
     </header>
 
     <main>
@@ -39,11 +39,13 @@
         <div class="section-box">
             <section class="desc">
                 <div class="container">
-                    <h2 class="title">WE ARE</h2>
-                    <p class="text">
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a<br>
-                        piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                    </p>
+                    <div class="desc-info">
+                        <h2 class="title">WE ARE</h2>
+                        <p class="text">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a<br>
+                            piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                    </div>
                     <ul class="promo">
                         <li>
                             <img src="./images/promo01.png" alt="HOME">
@@ -103,24 +105,48 @@
                         </div>
                     </div>
                     <div class="work5">
-                        <strong>Boxing</strong>
-                        <p>WEB/PRINT</p>
+                        <img src="./images/work05.jpg" alt="">
+                        <div class="txt">
+                            <strong>Boxing</strong>
+                            <p>WEB/PRINT</p>
+                        </div>
                     </div>
                     <div class="work6">
-                        <strong>Ice Hockey</strong>
-                        <p>WEB/PRINT</p>
+                        <img src="./images/work06.jpg" alt="">
+                        <div class="txt">
+                            <strong>Ice Hockey</strong>
+                            <p>WEB/PRINT</p>
+                        </div>
                     </div>
                     <div class="work7">
-                        <strong>Skate Board</strong>
-                        <p>WEB/PRINT</p>
+                        <img src="./images/work07.jpg" alt="">
+                        <div class="txt">
+                            <strong>Skate Board</strong>
+                            <p>WEB/PRINT</p>
+                        </div>
                     </div>
                     <div class="work8">
-                        <strong>Basketball</strong>
-                        <p>WEB/PRINT</p>
+                        <img src="./images/work08.jpg" alt="">
+                        <div class="txt">
+                            <strong>Basketball</strong>
+                            <p>WEB/PRINT</p>
+                        </div>
                     </div>
                 </div><!-- conbox -->
                 <hr>    
             </section><!-- work -->
+
+            <section class="blog"><!-- mobile only -->
+                <div class="container">
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <p class="date"></p>
+                            <p class="txt"></p>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- blog -->
 
             <section class="contact">
                 <h2 class="title">CONTACT</h2>
@@ -132,7 +158,7 @@
                             <input type="email" name="mail" class="mail" value="Email Address">
                         </div>
                         <div class="message-box">
-                            <textarea id="message" rows="5" name="message" class="message">Message</textarea>
+                            <textarea id="message" rows="7" name="message" class="message">Message</textarea>
                         </div>
                         <input type="submit" class="submit" value="SEND MESSAGE">
                     </form>
@@ -140,7 +166,7 @@
             </section><!-- contact -->
             
             <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30086.47491530196!2d126.93397237250313!3d37.567993776674285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37454f683b1%3A0xfa19c5217c6a0bc0!2z6rK967O16raBIOq0ke2ZlOusuA!5e0!3m2!1sko!2skr!4v1712293241748!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30086.47491530196!2d126.93397237250313!3d37.567993776674285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37454f683b1%3A0xfa19c5217c6a0bc0!2z6rK967O16raBIOq0ke2ZlOusuA!5e0!3m2!1sko!2skr!4v1712293241748!5m2!1sko!2skr" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section><!-- map -->
         </div>
     </main>
