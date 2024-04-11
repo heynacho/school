@@ -111,7 +111,7 @@ article.slide > img {
 
 /* desc */
 .desc {
-    padding: 50px;
+    padding: 50px 0;
     /* border-bottom: 1px solid #eee; */
 }
 .desc p {
@@ -133,6 +133,7 @@ article.slide > img {
     height: 20%;
 }
 .promo > li > img {
+    height: 50px;
     margin: 30px auto;
 }
 .promo > li > .title {
@@ -143,7 +144,10 @@ article.slide > img {
 }
 
 hr {
+    height: 1px;
     margin: 20px;
+    border: 0;
+    background-color: #ccc;
 }
 
 /* work */
@@ -169,17 +173,49 @@ hr {
     display: none;
 }
 .work > hr {
-    margin: 150px 48% 50px;
+    width: 20px; height: 2px;
+    margin: 150px auto 50px;
+    border: 0;
     background-color: navy;
+}
+
+/* blog */
+.blog {
+    font-family: 'Montserrat';
+}
+.blog .title {
+    padding: 30px;
+}
+.blog li {
+    margin-bottom: 50px;
+}
+.blog img {
+    width: 100%;
+}
+.blog .date {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #aaa;
+}
+.blog .txt {
+    line-height: 1.2;
 }
 
 /* contact */
 .contact > h2 {
     margin-bottom: 50px;
 }
-.contact form {
-    margin-bottom: 100px;
-}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea[id="message"]
+{
+    padding: 10px 0;
+    font-family:'Montserrat';
+    color: navy;
+    }
+
 .name,
 .phone,
 .mail,
@@ -191,8 +227,10 @@ hr {
     border-bottom: 1px solid #aaa;
 }
 .submit {
+    display: inline-block;
     float: right;
     padding: 15px;
+    margin-bottom: 50px;
     border: 0;
     color: white;
     background-color: navy;
@@ -201,7 +239,7 @@ hr {
 @media screen and (min-width:768px) {
     /* desc */
     .promo {
-        margin: 100px 0;
+        margin: 80px 50px 0;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -209,10 +247,10 @@ hr {
         align-items: center;
     }
     .promo > li {
-        width: 20%;
+        width: 22%;
     }
     .promo > li > img {
-        height: 70px;
+        height: 60px;
         margin: 30px auto;
     }
     .promo > li > .title {
@@ -220,6 +258,7 @@ hr {
     }
     .promo > li > .txt {
         margin-bottom: 30px;
+        font-size: 14px;
     }
 
     hr {
@@ -248,14 +287,39 @@ hr {
     .work > .conbox > div > .txt {
         display: block;
         position: absolute;
-        top:5%; left:5%;
+        left: 0; top: 0; 
+        width: 100%; height: 100%;
+        padding: 30px;
         font-family: 'Montserrat';
+        color: rgba(255, 255, 255, 0);
+        background-color: rgba(0, 0, 128, 0);
     }
+
+    .work > .conbox > div > .txt:hover {
+        color: white;
+        background-color: rgba(0, 0, 128, 0.685);
+    }
+    
+    
     .work > hr {
         display: block;
         width: 20px;
-        margin: 150px auto 50px;
+        margin: 100px auto 50px;
         background-color: navy;
+    }
+
+    /* blog */
+
+    .blog ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog li {
+        width: 32%;
+        margin-bottom: 100px;
+    }
+    .blog .txt {
+        font-size: 14px;
     }
 
     /* contact */
@@ -278,10 +342,15 @@ hr {
     }
 }
 @media screen and (min-width:1024px) {
+    .desc {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     .desc > .container > .desc-info {
+        max-width: 1300px;
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
+        margin: 50px 50px 0;
     }
     .desc > .container > .desc-info > .text {
         margin: 0;
@@ -306,16 +375,23 @@ hr {
 
     /* work */
     .work h2 {
-        margin-left: 50px;
+        margin-left: 70px;
         text-align: left;
     }
     .work > .conbox > div {
         width: 25%;
     }
 
+    /* blog */
+    .blog {
+        display: none;
+    }
+
     /* contact */
     .contact {
-        padding: 50px;
+        max-width: 1380px;
+        padding: 60px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
